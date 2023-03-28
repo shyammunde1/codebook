@@ -6,7 +6,8 @@ export async function getProdiuctList(searchTerm) {
   );
 
   if (!response.ok) {
-    throw { message: response.statusText, status: response.status };
+    const errormsg=  { message: response.statusText, status: response.status }
+    throw errormsg;
   }
 
   const data = await response.json();
@@ -19,7 +20,8 @@ export async function getProduct(id) {
   );
   
   if (!response.ok) {
-    throw { message: response.statusText, status: response.status };
+    const errormsg=  { message: response.statusText, status: response.status }
+    throw errormsg;
   }
   const data = await response.json();
   return data;
@@ -31,7 +33,8 @@ export async function getFeatureProductList() {
   );
   
   if (!response.ok) {
-    throw { message: response.statusText, status: response.status };
+    const errormsg=  { message: response.statusText, status: response.status }
+    throw errormsg;
   }
   const data = await response.json();
   return data;
