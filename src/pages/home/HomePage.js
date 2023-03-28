@@ -6,7 +6,7 @@ import { Testimonials } from "./component/Testimonials";
 
 export const HomePage = () => {
 
-useTitle("E-Books Home Page")
+useTitle("E-Books Home")
 
   return (
     <main >
